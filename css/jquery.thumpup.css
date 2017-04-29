@@ -5,13 +5,14 @@
 .fa-thumbs-o-up {}
 
 .thumb-up-tips-animation{
-	position: relative;
+	position: absolute;
+	float: left;
 	animation: mypraised 1s;
 	-moz-animation: mypraised 1s;
 	-webkit-animation: mypraised 1s;
 	-o-animation: mypraised 1s;
 	display: block;
-	width: 10px;
+	/*width: 10px;*/
 }
 
 @keyframes mypraised

@@ -10,10 +10,11 @@
 			color: "red",
 			onAnimate: function() {
 				var that = this;
+				var $thumbicon=that.find('i');
 				var animationClassName='thumb-up-tips-animation';
-				if(!that.hasClass(animationClassName)) {
-					this.addClass(animationClassName).on('webkitAnimationEnd', function() {
-						that.removeClass(animationClassName);
+				if(!$thumbicon.hasClass(animationClassName)) {
+					$thumbicon.addClass(animationClassName).on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
+						$thumbicon.removeClass(animationClassName);
 					});
 				}
 			},
