@@ -1,5 +1,5 @@
 (function($) {
-	function HopeThumbTips() {
+	function ThumbUp() {
 		this.regional = [];
 		this.regional[''] = {};
 		this._defaults = {
@@ -10,9 +10,10 @@
 			color: "red",
 			onAnimate: function() {
 				var that = this;
-				if(!that.hasClass('hope-thump-tips-animation')) {
-					this.addClass('hope-thump-tips-animation').on('webkitAnimationEnd', function() {
-						that.removeClass('hope-thump-tips-animation');
+				var animationClassName='thumb-up-tips-animation';
+				if(!that.hasClass(animationClassName)) {
+					this.addClass(animationClassName).on('webkitAnimationEnd', function() {
+						that.removeClass(animationClassName);
 					});
 				}
 			},
@@ -22,9 +23,9 @@
 		$.extend(this._defaults, this.regional['']);
 	};
 
-	$.extend(HopeThumbTips.prototype, {
-		markerClassName: 'hope-thump-tips',
-		propertyName: 'hopeThumbTips',
+	$.extend(ThumbUp.prototype, {
+		markerClassName: 'thumb-up-tips',
+		propertyName: 'ThumbUp',
 		//初始化函数
 		setDefaults: function(options) {
 			$.extend(this._defaults, options || {});
@@ -73,15 +74,15 @@
 
 	});
 
-	$.fn.hopeThumbTips = function(options) {
+	$.fn.thumbup = function(options) {
 		return this.each(function() {
 			if(typeof options == 'string') {
 				throw '未知参数.' + options;
 			} else {
-				var plugin = new HopeThumbTips();
+				var plugin = new ThumbUp();
 				plugin._attachPlugin(this, options || {});
 			}
 		});
 	};
-	// var plugin = $.hopeThumbTips = new HopeThumbTips();
+	// var plugin = $.ThumbUp = new ThumbUp();
 })($);
