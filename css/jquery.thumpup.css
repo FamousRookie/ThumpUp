@@ -1,0 +1,47 @@
+.fa-thumbs-up {
+	color: #03bb50;
+}
+
+.fa-thumbs-o-up {}
+
+.hope-thump-tips-animation{
+	position: relative;
+	animation: mypraised 1s;
+	-moz-animation: mypraised 1s;
+	-webkit-animation: mypraised 1s;
+	-o-animation: mypraised 1s;
+	display: block;
+	width: 10px;
+}
+
+@keyframes mypraised
+{
+	0%   {color:#8A8A8A; font-size: 14px;}
+	30%  {color:#03bb50; font-size: 18px;transform:rotate(30deg);transform-origin: right;}
+	60%  {color:#03bb50; font-size: 18px;transform:rotate(-10deg);transform-origin: right;}
+	100% {color:#03bb50; font-size: 14px;}
+};
+
+@-moz-keyframes mypraised
+{
+	0%   {color:#8A8A8A; font-size: 14px;}
+	30%  {color:#03bb50; font-size: 18px;transform:rotate(30deg);transform-origin: right;}
+	60%  {color:#03bb50; font-size: 18px;transform:rotate(-10deg);transform-origin: right;}
+	100% {color:#03bb50; font-size: 14px;}
+};
+
+@-webkit-keyframes mypraised
+{
+	0%   {color:#8A8A8A; font-size: 14px;}
+	30%  {color:#03bb50; font-size: 18px;transform:rotate(30deg);transform-origin: right;}
+	60%  {color:#03bb50; font-size: 18px;transform:rotate(-10deg);transform-origin: right;}
+	100% {color:#03bb50; font-size: 14px;}
+};
+
+@-o-keyframes  mypraised
+{
+	0%   {color:#8A8A8A; font-size: 14px;}
+	30%  {color:#03bb50; font-size: 18px;transform:rotate(30deg);transform-origin: right;}
+	60%  {color:#03bb50; font-size: 18px;transform:rotate(-10deg);transform-origin: right;}
+	100% {color:#03bb50; font-size: 14px;}
+};
